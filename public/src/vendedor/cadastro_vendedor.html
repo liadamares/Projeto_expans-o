@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Vendedor - Gerenciamento de Clientes</title>
-    <link rel="stylesheet" href="Style/Style.css">
+    <link rel="stylesheet" href="../Style/Style.css">
 </head>
 <body>
     <header class="header-bar">
@@ -13,13 +13,14 @@
             <nav>
                 <div id="sidebar" class="sidebar">
                     <a href="javascript:void(0)" class="fechar-btn" onclick="closeNav()">x</a>
-                    <a href="Dashboard.html">Dashboard</a>
-                    <a href="cadastro_Cliente.html">Cadastro de Clientes</a>
-                    <a href="buscar_cliente.html">Busca de Clientes</a>
-                    <a href="cadastro_produto.html">Cadastro de Produtos</a>
-                    <a href="buscar_produto.html">Busca de Produtos</a>
+                    <a href="../Dashboard.html">Dashboard</a>
+                    <a href="../clientes/cadastro_Cliente.html">Cadastro de Clientes</a>
+                    <a href="../clientes/buscar_cliente.html">Busca de Clientes</a>
+                    <a href="../produtos/cadastro_produto.html">Cadastro de Produtos</a>
+                    <a href="../produtos/buscar_produto.html">Busca de Produtos</a>
                     <a href="cadastro_vendedor.html">Cadastro de Vendedores</a>
-                    <a href="relatório.html">Relatórios</a>
+                    <a href="buscar_vendedor.html">Busca de Vendedores</a>
+                    <a href="../relatório.html">Relatórios</a>
                 </div>
             </nav>
         </header>
@@ -31,18 +32,15 @@
                 <input type="text" id="nome" name="nome" placeholder="Nome" required>
             </div>
             <div class="textfield2">
-                <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" name="telefone" placeholder="Telefone" required>
-            </div>
-            <div class="textfield2">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="buscar">
-            <button type="submit" class="btn-4">Cadastrar</button>
+            <button class="btn-cadastrar">Cadastrar</button>
             <div>
         </form>
     </main>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
+    <script src="vendedor.js"></script>
 </body>
 </html>

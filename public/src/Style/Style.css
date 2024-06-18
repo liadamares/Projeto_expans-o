@@ -1,0 +1,361 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+        body {
+            margin: 0;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-Login {
+            width: 100vw;
+            height: 100vh;
+            background: #1C0929;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-login {
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .left-login > h1 {
+            color: #E7DAD3;
+            font-size: 2em;
+            font-family: "Poetsen One", sans-serif;
+        }
+
+        .left-img {
+            width: 70%;
+        }
+
+        .right-login {
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-login {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px 35px;
+            background-color: #572486;
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-login > h1 {
+            color: #E7DAD3;
+            font-weight: 800;
+        }
+
+        .textfield {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .textfield > input {
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #55307A;
+            color: #E7DAD3;
+            box-shadow: 0px 10px 30px rgba(7, 7, 7, 0.5);
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .textfield > label {
+            color: #E7DAD3;
+        }
+
+        .textfield > input::placeholder {
+            color: #D1C4E9;
+        }
+
+        .btn-login, .btn {
+            background-color: #4B0082;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-login:hover, .btn:hover {
+            background-color: #9C2A8D;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #1C0929;
+            color: #09E26B;
+            padding: 10px 15px;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: left;
+        }
+
+        .openbtn:hover {
+            background-color: #98279C;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #1C0929;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 40px;
+        }
+
+        .sidebar > a {
+            padding: 20px 20px 20px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #09E26B;
+            display: block;
+            transition: 0.1s;
+        }
+
+        .sidebar a:hover {
+            background-color: #6B239B;
+        }
+
+        .sidebar .fechar-btn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .header-bar {
+            display: flex;
+            justify-content: center;
+            background-color: #1C0929;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .header-bar > h1 {
+            color: #09E26B;
+        }
+
+        main {
+            padding: 16px;
+        }
+
+        main > h1 {
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            color: #1C0929;
+        }
+
+        .img-dash {
+            background-image: url(/imagens/metrics-animate.svg);
+            background-size: cover;
+            width: 100vw;
+            height: 80vh;
+        }
+
+        .cadastro-cliente {
+            width: 100%;
+            height: 50vh;
+        }
+
+        .textfield2 {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .textfield2 > label {
+            color: black;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .textfield2 > input {
+            color: #09E26B;
+            margin: 15px;
+            padding: 3px;
+            border-radius: 5px;
+            background-color: #12021D;
+            box-shadow: 0px 1px 2px #4B0082;
+        }
+
+        .textfield2 > input::placeholder {
+            color: #09E26B;
+        }
+
+        .btn-cadastrar {
+            background-color: #1C0929;
+            color: #09E26B;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            padding: 15px;
+            margin-top: 50px;
+            box-shadow: 0px 10px 5px black;
+            transition: background-color 0.3s;
+        }
+
+        .btn-c {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+        .buscar {
+            width: 100%;
+            height: 50%;
+            border-radius: 10px;
+        }
+
+        .textfield3 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .textfield3 > label {
+            color: black;
+            font-size: 16px;
+        }
+
+        .textfield3 > input {
+            color: #09E26B;
+            margin: 5px;
+            padding: 10px;
+            height: 50px;
+            width: 400px;
+            border: 0;
+            border-radius: 5px;
+            background-color: #12021D;
+            box-shadow: 0px 3px 2px #12021D;
+            outline: none;
+        }
+
+        .textfield3 > input::placeholder {
+            color: #09E26B;
+        }
+
+        .btn-3 {
+            background-color: #1C0929;
+            color: #09E26B;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            padding: 10px;
+            width: 100px;
+            height: 40px;
+            box-shadow: 0px 10px 5px black;
+            transition: background-color 0.3s;
+        }
+
+        .btn-3:hover {
+            background-color: #39063D;
+        }
+
+        .tabela {
+            display: flex;
+            justify-content: center;
+            border-spacing: 8px;
+            margin-top: -8px;
+            width: 100%;
+            height: 100px;
+            margin-bottom: 0.5em;
+        }
+
+        .tabela th {
+            color: #09E26B;
+            border: 1px solid;
+            min-width: 100px;
+            height: 15px;
+        }
+
+        .tabela-cliente {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .tabela-cliente th, .tabela-cliente td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .tabela-cliente th {
+            background-color: #572486;
+            color: white;
+        }
+
+        .tabela-cliente tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .tabela-cliente tr:hover {
+            background-color: #ddd;
+        }
+
+        .tabela-cliente td {
+            color: #333;
+        }
+
+        .tabela-produto {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .tabela-produto th, .tabela-produto td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .tabela-produto th {
+            background-color: #572486;
+            color: white;
+        }
+
+        .tabela-produto tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .tabela-produto tr:hover {
+            background-color: #ddd;
+        }
+
+        .tabela-produto td {
+            color: #333;
+        }
+
+
