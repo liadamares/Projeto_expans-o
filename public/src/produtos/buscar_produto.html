@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscar Produto - Gerenciamento de Clientes</title>
-    <link rel="stylesheet" href="Style/Style.css">
+    <link rel="stylesheet" href="../Style/Style.css">
 </head>
 <body>
     <header class="header-bar">
         <span class="openbtn" onclick="openNav()">☰ Menu</span>
         <h1>Beleza Natural</h1>
-            <nav>
-                <div id="sidebar" class="sidebar">
-                    <a href="javascript:void(0)" class="fechar-btn" onclick="closeNav()">x</a>
-                    <a href="Dashboard.html">Dashboard</a>
-                    <a href="cadastro_Cliente.html">Cadastro de Clientes</a>
-                    <a href="buscar_cliente.html">Busca de Clientes</a>
-                    <a href="cadastro_produto.html">Cadastro de Produtos</a>
-                    <a href="buscar_produto.html">Busca de Produtos</a>
-                    <a href="cadastro_vendedor.html">Cadastro de Vendedores</a>
-                    <a href="relatório.html">Relatórios</a>
-                </div>
-            </nav>
+        <nav>
+            <div id="sidebar" class="sidebar">
+                <a href="javascript:void(0)" class="fechar-btn" onclick="closeNav()">x</a>
+                <a href="../Dashboard.html">Dashboard</a>
+                <a href="../clientes/cadastro_Cliente.html">Cadastro de Clientes</a>
+                <a href="../clientes/buscar_cliente.html">Busca de Clientes</a>
+                <a href="cadastro_produto.html">Cadastro de Produtos</a>
+                <a href="buscar_produto.html">Busca de Produtos</a>
+                <a href="../vendedor/cadastro_vendedor.html">Cadastro de Vendedores</a>
+                <a href="../vendedor/buscar_vendedor.html">Busca de Vendedores</a>
+                <a href="../relatório.html">Relatórios</a>
+            </div>
+        </nav>
         </header>
     <main id="main">
         <h1>Buscar Produto</h1>
@@ -31,24 +32,26 @@
                 <input type="text" id="buscar" name="buscar" placeholder="Nome ou Descrição" required>
             </div>
             <div class="buscar">
-                <button type="submit" class="btn-3">Buscar</button>
+                <button type="button" class="btn-3" onclick="buscarProduto()">Buscar</button>
             </div>
             
         </form>  
-            <table class="tabela">
+           <div id="resultadoBusca">
+            <table class="tabela-produto">
                 <thead>
                     <tr>
                         <th>Nome</th>
                         <th>Descrição</th>
                         <th>Preço</th>
-                        <th>Quantidade Vendida</th>
                     </tr>
                 </thead>
                 <tbody id="resultados">
                     <!-- Resultados da busca -->
                 </tbody>
             </table>
+        </div>
     </main>
-    <script src="script.js"></script>
+    <script src="produtos.js"></script>
+    <script src="../Script.js"></script>
 </body>
 </html>
