@@ -1,7 +1,7 @@
 // ------------------ Cadastrar produto ------------------------>
 
 document.getElementById('produtoForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
+    event.preventDefault(); 
 
     const formData = new FormData(this);
     const jsonData = {};
@@ -26,7 +26,7 @@ document.getElementById('produtoForm').addEventListener('submit', function(event
     .then(data => {
         alert('Produto cadastrado com sucesso!');
         console.log(data);
-        // Aqui você pode adicionar qualquer lógica adicional, como limpar o formulário
+  
         document.getElementById('produtoForm').reset();
     })
     .catch(error => {
@@ -35,7 +35,7 @@ document.getElementById('produtoForm').addEventListener('submit', function(event
     });
 });
 
-    // ------------------ Consultar produto ------------------------>
+   
 
 function buscarProduto() {
     // Fazer requisição AJAX para o endpoint localhost:8080/clientes
@@ -46,9 +46,9 @@ function buscarProduto() {
         }})
         .then(response => response.json())
         .then(data => {
-            // Limpar o conteúdo atual da tabela
+            
             document.getElementById('resultados').innerHTML = '';
-            // Iterar sobre os dados retornados e adicionar linhas à tabela
+            
             data.forEach(cliente => {
                 const newRow = document.createElement('tr');
                 newRow.innerHTML = `
