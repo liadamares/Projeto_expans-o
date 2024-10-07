@@ -4,13 +4,13 @@ const path = require('path');
 
 const app = express();
 
-// Habilitar o CORS para todas as origens
+
 app.use(cors({
-    origin: '*', // Permitir todas as origens
-    methods: ['GET', 'POST', 'OPTIONS'], // Métodos permitidos
+    origin: '*', 
+    methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'application/json'],
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200// Cabeçalhos permitidos
+    credentials:true,         
+    optionSuccessStatus:200
 }));
 
 app.use(express.static(path.join(__dirname, 'public/src')));
