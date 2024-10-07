@@ -38,7 +38,7 @@ document.getElementById('produtoForm').addEventListener('submit', function(event
    
 
 function buscarProduto() {
-    // Fazer requisição AJAX para o endpoint localhost:8080/clientes
+   
     fetch('http://localhost:8080/produtos', {
         method: 'GET',
         headers: {
