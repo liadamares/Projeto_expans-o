@@ -1,6 +1,5 @@
 document.getElementById('clienteForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
-
+    event.preventDefault(); 
     const formData = new FormData(this);
     const jsonData = {};
     formData.forEach((value, key) => {
@@ -23,7 +22,7 @@ document.getElementById('clienteForm').addEventListener('submit', function(event
     .then(data => {
         alert('Cliente cadastrado com sucesso!');
         console.log(data);
-        // Aqui você pode adicionar qualquer lógica adicional, como limpar o formulário
+
         document.getElementById('clienteForm').reset();
     })
     .catch(error => {
@@ -43,9 +42,9 @@ function buscarCliente() {
         }})
         .then(response => response.json())
         .then(data => {
-            // Limpar o conteúdo atual da tabela
+            
             document.getElementById('resultados').innerHTML = '';
-            // Iterar sobre os dados retornados e adicionar linhas à tabela
+
             data.forEach(cliente => {
                 const newRow = document.createElement('tr');
                 newRow.innerHTML = `
